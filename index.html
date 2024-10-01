@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" id="htmltag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatives for you</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="dark:bg-slate-800">
+    <!--navbar-->
+
+    <header class="dark:bg-slate-500 transition-colors">
+      <nav
+        class="p-5 px-4 md:px-10 shadow md:flex md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img src="images/c4u full logo_2022 1.png" alt="" />
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 md:hidden inline">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+
+        <div>
+          <ul
+            class="md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:bg-transparent bg-white dark:bg-slate-500 dark:text-white md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-300"
+          >
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="font-semibold text-xl hover:text-fuchsia-700 duration-300 ease-in-out"
+                >Home</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="font-semibold text-xl hover:text-fuchsia-700 duration-300 ease-in-out"
+                >About Us</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a
+                href="#"
+                class="font-semibold text-xl hover:text-fuchsia-700 duration-300 ease-in-out text-red-500"
+                >Upskill</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="font-semibold text-xl hover:text-fuchsia-700 duration-300 ease-in-out"
+                >Contact us
+              </a>
+            </li>
+
+            <button
+              class="px-3 py-2 bg-[#F44335] rounded-md transition-all ease-in-out duration-150 hover:scale-110 hover:bg-blue-400"
+            >
+              Register Interest
+            </button>
+
+            <button id="switch" class="px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 dark:stroke-white hover:scale-150 transition"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </button>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+
+    <!--hero section-->
+    <section
+      style="background-image: url(images/Group_238901.png)"
+      class="h-screen bg-cover flex items-center justify-center md:rounded-b-[300px] rounded-none"
+    >
+      <div
+        class="flex flex-col items-center justify-center px-4 md:px-0 md:w-1/2"
+      >
+        <p class="font-bold text-white">
+          Discover <span class="text-red-500">-</span> Interact
+          <span class="text-red-500">-</span> Engage
+        </p>
+        <h1
+          class="md:text-[56px] text-[38px] font-semibold text-white text-center px-1"
+        >
+          Connecting <span class="underline text-[#F44335]">talents</span> to
+          opportunity through
+          <span class="underline text-[#F44335]">skills</span>
+        </h1>
+        <p class="text-[#FAFAFA] text-[20px]">
+          We forster a skill-focussed environment enabling students to navigate
+          their career with their self-paced learning journey and businesses to
+          gain market-ready talent.
+        </p>
+        <button
+          class="rounded-full text-red-600 bg-white py-3 px-6 font-bold transition-all ease-in-out duration-150 hover:scale-110 hover:bg-yellow-400 dark:bg-slate-800 dark:text-white dark:hover:text-slate-800 dark:hover:bg-white hover:translate-y-2"
+        >
+          Ask questions
+        </button>
+      </div>
+    </section>
+
+    <!--empower section-->
+    <section
+      class="grid grid-cols-12 items-center py-14 md:px-24 px-16 bg-slate-200 dark:bg-gray-600 dark:text-white transition-colors"
+    >
+      <div class="md:col-span-3 col-span-12">
+        <h1 class="text-[40px] font-semibold">
+          At <span class="underline text-[#F44335]">C4U</span>, <br />
+          We Empower:
+        </h1>
+      </div>
+      <div
+        class="md:grid md:grid-cols-3 flex flex-wrap gap-6 md:col-span-9 col-span-12"
+      >
+        <div
+          class="bg-[#2D3142] text-white rounded-lg px-3 py-5 flex flex-col gap-3 logo dark:bg-slate-500 transition-colors hover:text-black dark:hover:text-[#DDDDDD]"
+        >
+          <div class="bg-white rounded-full w-fit p-2">
+            <img src="images/37.png" alt="" />
+          </div>
+          <h1 class="font-semibold">Students</h1>
+          <p class="text-[#DDDDDD]">
+            We help students find their way in a fast-evolving world by creating
+            a personalised learning journey guaranteed to help stand out in a
+            crowded job market.
+          </p>
+        </div>
+        <div
+          class="bg-[#2D3142] text-white rounded-lg px-3 py-5 flex flex-col gap-3 logo dark:bg-slate-500 transition-colors hover:text-black dark:hover:text-[#DDDDDD]"
+        >
+          <div class="bg-white rounded-full w-fit p-2">
+            <img src="images/50.png" alt="" />
+          </div>
+          <h1 class="font-semibold">Universities</h1>
+          <p class="text-[#DDDDDD]">
+            We help your emerging talent to unlock their full potential by
+            combining education and work to create future-ready employees
+          </p>
+        </div>
+        <div
+          class="bg-[#2D3142] text-white rounded-lg px-3 py-5 flex flex-col gap-3 logo dark:bg-slate-500 transition-colors hover:text-black dark:hover:text-[#DDDDDD]"
+        >
+          <div class="bg-white rounded-full w-fit p-2">
+            <img src="images/16.png" alt="" />
+          </div>
+          <h1 class="font-semibold">Businesses</h1>
+          <p class="text-[#DDDDDD]">
+            We enable businesses to tap into the diverse pool of emerging talent
+            cultivated by universities. To co-create the future workforce and
+            revitalise the business world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--about us section-->
+    <section class="dark:text-white">
+      <div
+        class="grid grid-cols-2 justify-center items-center gap-3 md:px-28 px-14 py-10 bg-no-repeat bg-cover bg-violet-100 dark:bg-gray-600"
+        style="background-image: url('images/Oval.png')"
+      >
+        <div class="flex gap-5 flex-col pr-20 md:col-span-1 col-span-2">
+          <p class="text-[#FC5A5A] font-semibold">About us</p>
+          <h1 class="text-[36px] font-medium">Our Mission</h1>
+          <p class="py-14 font-semibold">
+            To create a personalised pathway for continuous learning and
+            transferrable skills development.
+          </p>
+          <div>
+            <button
+              class="text-[#FC5A5A] border-[#FC5A5A] rounded-full flex items-center gap-3 border py-2 md:px-5 px-3 font-semibold transition-all ease-in-out duration-150 hover:scale-105 hover:bg-green-500 hover:text-slate-600 hover:translate-y-2"
+            >
+              Find out more <img src="images/Icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="md:col-span-1 col-span-2">
+          <img src="images/Group 238902.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-2 justify-center items-center gap-10 md:px-28 px-14 py-10 bg-no-repeat bg-cover bg-violet-100 dark:bg-gray-600 dark:text-white"
+        style="background-image: url('images/Oval.png')"
+      >
+        <div class="md:col-span-1 col-span-2">
+          <img src="images/Right.png" alt="" />
+        </div>
+
+        <div class="flex gap-5 flex-col md:pl-20 md:col-span-1 col-span-2">
+          <p class="text-[#FC5A5A] font-semibold">About us</p>
+          <h1 class="text-[36px] font-medium">Our Vision</h1>
+          <p class="py-14 font-semibold">
+            To have a globally recognised strategic bridge between education and
+            the job market
+          </p>
+          <div>
+            <button
+              class="text-[#FC5A5A] border-[#FC5A5A] rounded-full flex items-center gap-3 border py-2 px-5 font-semibold transition-all ease-in-out duration-150 hover:scale-105 hover:bg-green-500 hover:text-slate-600 hover:translate-y-2"
+            >
+              Contact us<img src="images/Icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--discover-interact-engage section-->
+    <section class="dark:text-white dark:bg-slate-600">
+      <div class="md:grid md:grid-cols-3 flex flex-wrap gap-32 p-20">
+        <div class="flex flex-col gap-3 relative">
+          <img src="images/Group 199.png" class="w-16" alt="" />
+          <h2 class="font-semibold text-[24px]">Discover</h2>
+          <p class="text-[14px] text-[#757095] dark:text-white">
+            We uncover students unique skills to stand out in a crowded job
+            market
+          </p>
+
+          <img src="images/1.png" class="absolute top-0 right-0" alt="" />
+        </div>
+
+        <div class="flex flex-col gap-3 relative">
+          <img src="images/Group 199 (2).png" class="w-16" alt="" />
+          <h2 class="font-semibold text-[24px]">Interact</h2>
+          <p class="text-[14px] text-[#757095] dark:text-white">
+            We open doors to new opportunities by expanding your transferrable
+            skills
+          </p>
+
+          <img src="images/2.png" class="absolute top-0 right-0" alt="" />
+        </div>
+
+        <div class="flex flex-col gap-3 relative">
+          <img src="images/Group 199 (1).png" class="w-16" alt="" />
+          <h2 class="font-semibold text-[24px]">Engage</h2>
+          <p class="text-[14px] text-[#757095] dark:text-white">
+            To forester a skill focussed environment that enable students to
+            navigate their ideal career
+          </p>
+
+          <img src="images/3.png" class="absolute top-0 right-0" alt="" />
+        </div>
+      </div>
+
+      <p class="text-gray-400">team 6</p>
+    </section>
+
+    <!--creative team section-->
+    <section
+      style="background-image: url('images/Rectangle_32.png')"
+      class="bg-cover bg-no-repeat md:p-8 sm:p-4 p-1 relative"
+    >
+      <div class="mx-16">
+        <div class="mt-20 mb-10 flex md:flex-row flex-col">
+          <h1 class="text-[40px] font-semibold dark:text-white">
+            The Creative Team <br />
+            behind<span class="text-[#F44335]"> the door</span>
+          </h1>
+          <img src="images/Arrow_10.png" class="mt-14" alt="" />
+        </div>
+        <div class="grid grid-cols-4 gap-14 mt-4">
+          <div class="CEO md:col-span-1 sm:col-span-2 col-span-4  dark:bg-slate-900 dark:text-white dark:hover:bg-slate-600">
+            <img src="images/image 3.png" alt="" />
+            <h2 class="font-bold text-[25px]">Ekta Mahajan</h2>
+            <p class="text-gray-500 font-semibold">Founder & C.E.O</p>
+            <img src="images/Group 26610.png" class="mt-4" />
+          </div>
+          <div class="CEO md:col-span-1 sm:col-span-2 col-span-4  dark:bg-slate-900 dark:text-white dark:hover:bg-slate-600">
+            <img src="images/image 4.png" alt="" />
+            <h2 class="font-bold text-[25px]">Toby Potter-Drake</h2>
+            <p class="text-gray-500 font-semibold">Product Manager Associate</p>
+            <img src="images/Group 26610.png" class="mt-4" />
+          </div>
+          <div class="CEO md:col-span-1 sm:col-span-2 col-span-4 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-600">
+            <img src="images/image 2.png" alt="" />
+            <h2 class="font-bold text-[25px]">Ross Davies</h2>
+            <p class="text-gray-500 font-semibold">
+              Corporate Growth Associate
+            </p>
+            <img src="images/Group 26610.png" class="mt-4" />
+          </div>
+          <div class="CEO md:col-span-1 sm:col-span-2 col-span-4 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-600">
+            <img src="images/image 1.png" alt="" />
+            <h2 class="font-bold text-[25px]">Leo crozier</h2>
+            <p class="text-gray-500 font-semibold">Software Developer</p>
+            <img src="images/Group 26610.png" class="mt-4" />
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="images/Group 47269.png"
+        class="absolute top-52 right-10 -z-10"
+        alt=""
+      />
+      <img
+        src="images/Group 47269.png"
+        class="absolute top-3/4 left-7 -z-10 md:block hidden"
+        alt=""
+      />
+    </section>
+
+    <!--footer section-->
+    <footer class="dark:text-white mt-28">
+      <div class="grid grid-cols-3 px-16 py-10 gap-10 border-b">
+        <div class="col-span-3 md:col-span-1 flex flex-col gap-2">
+          <img
+            src="images/c4u full logo_2022 1.png"
+            class="w-40 dark:bg-slate-400 rounded-xl"
+            alt=""
+          />
+          <p>Level39</p>
+          <p>One Canada Square,</p>
+          <p>Canary Wharf,</p>
+          <p>London,</p>
+          <p>E14 5AB</p>
+        </div>
+        <div class="col-span-3 md:col-span-2 flex flex-wrap flex-row gap-20">
+          <div class="flex flex-col gap-4">
+            <p class="font-bold text-[18px]"><a href="#">Home</a></p>
+            <p class="text-[16px]"><a href="#">Collaborations</a></p>
+            <p class="text-[16px]"><a href="#">Statistics</a></p>
+            <p class="text-[16px]"><a href="#">How It Works</a></p>
+            <p class="text-[16px]"><a href="#">Testimonials</a></p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <p class="font-bold text-[18px]"><a href="#">About Us</a></p>
+            <p class="text-[16px]"><a href="#">Who We Are</a></p>
+            <p class="text-[16px]"><a href="#">Mission statement</a></p>
+            <p class="text-[16px]"><a href="#">Our Vision</a></p>
+            <p class="text-[16px]"><a href="#">The Team</a></p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <p class="font-bold text-[18px]"><a href="#">Upskill</a></p>
+            <p class="text-[16px]"><a href="#">It Support</a></p>
+            <p class="text-[16px]"><a href="#">Project Managment</a></p>
+            <p class="text-[16px]"><a href="#">Data Analysts</a></p>
+            <p class="text-[16px]"><a href="#">Ux Design</a></p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <p class="font-bold text-[18px]"><a href="#">Contact Us</a></p>
+            <p class="text-[16px]"><a href="#">Your message</a></p>
+            <p class="text-[16px]"><a href="#">Email</a></p>
+            <p class="text-[16px]"><a href="#">Phone number</a></p>
+            <p class="text-[16px]"><a href="#">Linkedin</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3">
+        &copy; Copyright 2022 Creatives For You LTD
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+
+      const dark = document.getElementById("htmltag");
+      document.getElementById("switch").addEventListener("click", function () {
+        dark.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

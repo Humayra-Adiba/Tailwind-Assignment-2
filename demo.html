@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+
+<nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+  <div class="flex justify-between items-center">
+    <span class="text-2xl font-[Poppins] cursor-pointer">
+      <img src="images/c4u full logo_2022 1.png" alt="" />
+    </span>
+
+    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+      <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+    </span>
+  </div>
+
+  <ul
+    class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+  >
+    <li class="mx-4 my-6 md:my-0">
+      <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="#" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-red-500"
+        >Upskill</a
+      >
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+        >Contact us
+      </a>
+    </li>
+
+    <button
+      class="bg-red-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-red-500 rounded"
+    >
+      Register Interest
+    </button>
+  </ul>
+</nav>
+
+<script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+ <!--hggjhjhgfytrtyhgvnh-->
+<nav
+class="flex mx-auto justify-between items-center dark:text-white transition-colors"
+>
+<div>
+  <img src="images/c4u full logo_2022 1.png" alt="" />
+</div>
+<ul class="hidden md:gap-5 md:flex font-semibold text-[18px]" id="nav">
+  <li><a href="#">Home</a></li>
+  <li class="text-[#F44335]"><a href="#">About Us</a></li>
+  <li><a href="#">Upskill</a></li>
+  <li><a href="#">Contact us</a></li>
+</ul>
+<div class="flex gap-4 items-center">
+  <button
+    class="px-3 py-2 bg-[#F44335] rounded-md transition-all ease-in-out duration-150 hover:scale-110 hover:bg-blue-400"
+  >
+    Register Interest
+  </button>
+  <button id="switch">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6 dark:stroke-white hover:scale-150 transition"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+      />
+    </svg>
+  </button>
+  <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+  </span>
+</div>
+</nav>
+
+
+px-4 md:px-10 py-5
+</body>
+</html>
